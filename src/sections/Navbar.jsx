@@ -9,7 +9,7 @@ function Navbar() {
 
         {/* Logo */}
         <h1 className="logo">
-          CSE<span>.Visualized</span>
+          Spro<span>uza</span>
         </h1>
 
         {/* Links */}
