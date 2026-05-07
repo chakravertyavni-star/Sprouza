@@ -1,0 +1,159 @@
+/* =========================
+   SUBJECTS SECTION
+========================= */
+
+.subjects {
+  background: #050505;
+  color: white;
+
+  padding: 8rem 6%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header */
+
+.subjects-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.subjects-tag {
+  color: #a855f7;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.subjects-header h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+/* Grid */
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2rem;
+
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Cards */
+
+.subject-card {
+  position: relative;
+
+  background: rgba(255,255,255,0.03);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 28px;
+
+  padding: 2rem;
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+
+  backdrop-filter: blur(20px);
+
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subject-card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(139,92,246,0.5);
+
+  box-shadow:
+    0 0 40px rgba(139,92,246,0.15);
+}
+
+/* Glow */
+
+.card-glow {
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  background: rgba(139,92,246,0.15);
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  top: -80px;
+  right: -80px;
+}
+
+/* Text */
+
+.subject-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  position: relative;
+  z-index: 10;
+}
+
+.subject-card p {
+  color: rgba(255,255,255,0.6);
+
+  line-height: 1.7;
+
+  margin-top: 1rem;
+
+  position: relative;
+  z-index: 10;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+
+  .subjects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+
+  .subjects-header h2 {
+    font-size: 3rem;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .subjects {
+    padding: 6rem 1.5rem;
+  }
+
+  .subjects-header h2 {
+    font-size: 2.3rem;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-card {
+    min-height: 220px;
+  }
+}
